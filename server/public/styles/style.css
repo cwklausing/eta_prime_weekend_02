@@ -43,19 +43,20 @@ q:before, q:after {
 
 body {
 	background-image: url("/styles/swirl.png");
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Oswald', sans-serif;;
 }
 
 #results {
-	background: #47476b;
+	background: #d1d1e1;
 	width: 65%;
 	margin: 0 auto;
 	border: solid 4px #999;
 }
 
 .header {
-	background: #47476b;
-	font-size: 4em;
+	background: #d1d1e1;
+	font-size: 5em;
+	font-family: 'Oswald', sans-serif;
 	color: #ff6666;
 	text-shadow: 3px 3px #003380;
 	width: 65%;
@@ -86,23 +87,22 @@ body {
 li {
 	font-size: 2em;
 	font-weight: bold;
-	color: #005ce6;
 	width: 28%;
 	height: 150px;
 	padding: 10px;
 	line-height: 175%;
 	vertical-align: middle;
 	display: inline-block;
-	border: solid 4px #999;
+	border: solid 4px gray;
 	margin-bottom: 50px;
-	background: #ff6666;
+	background: #9393b9;
 }
 
 .leftButton, .rightButton {
 	width: 150px;
 	height: 150px;
-	background: #47476b;
-	border: solid 4px #999;
+	background: #9393b9;
+	border: solid 4px gray;
 	display: inline;
 }
 
