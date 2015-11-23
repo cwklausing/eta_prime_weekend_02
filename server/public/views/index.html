@@ -4,11 +4,40 @@
         <meta charset="UTF-8">
         <title></title>
         <link rel="stylesheet" href="/styles/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="/vendors/jquery.min.js"></script>
 	<script type="text/javascript" src="/vendors/handlebars.min.js"></script>
         <script type="text/javascript" src="/scripts/app.js"></script>
     </head>
     <body>
+    <section class = "header">
+    <h1>All About Eta</h1>
+    </section>
+    <section class = "handlebarSection">
+        <script id = "profiles" type = "text/x-handlebars-template">
+        {{#each profiles}}
+        <div class = "{{lastName}} person">
+            <div class = "profileName">
+            <h2>{{firstName}} {{lastName}}</h2>
+            </div>
+            <div id = {{lastName}} movies>
+                <ul>
+                    <li>{{favoriteMovies.[0].movieName}}</li>
+                    <li>{{favoriteMovies.[1].movieName}}</li>
+                    <li>{{favoriteMovies.[2].movieName}}</li>
+                </ul>
+            </div>
+        </div>
+        {{/each}}
+        </script>
+    </section>
+    <div class = "leftButton">
+    </div>
+    <div class = "rightButton">
+    </div>
+    <section id = "results">
+    </section>
+    
     </body>
 
 </html>
