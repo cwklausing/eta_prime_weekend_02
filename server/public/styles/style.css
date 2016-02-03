@@ -47,18 +47,17 @@ body {
 }
 
 #results {
-	background: #d1d1e1;
+	background: rgba(209, 225, 224, 0.65);
 	width: 65%;
 	margin: 0 auto;
 	border: solid 4px #999;
 }
 
 .header {
-	background: #d1d1e1;
+	background: rgba(209, 225, 224, 0.65);
 	font-size: 5em;
 	font-family: 'Oswald', sans-serif;
-	color: #ff6666;
-	text-shadow: 3px 3px #003380;
+	color: black;
 	width: 65%;
 	margin: 20px auto;
 	font-weight: bold;
@@ -72,14 +71,13 @@ body {
     display: none;
 }
 
-.currentProfile {
+.current {
 	display: inline;
 }
 
 .profileName {
-	color: white;
+	color: black;
 	font-size: 3em;
-	text-shadow: 2px 2px #003380;
 	margin: 50px auto;
 	padding: 40px;
 }
@@ -95,13 +93,17 @@ li {
 	display: inline-block;
 	border: solid 4px gray;
 	margin-bottom: 50px;
-	background: #9393b9;
+	background: white;
+}
+
+.leftButton, .rightButton, .header, #results, li {
+	border-radius: 15px;
 }
 
 .leftButton, .rightButton {
 	width: 150px;
 	height: 150px;
-	background: #9393b9;
+	background: white;
 	border: solid 4px gray;
 	display: inline;
 }

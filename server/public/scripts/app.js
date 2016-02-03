@@ -14,7 +14,7 @@ $(function(){
 		results.append(html);
 
 		//Set the first person's profile to visible
-		$('div.person').first().addClass('currentProfile');
+		$('div.person').first().addClass('current');
 	});
 
 	//When clicking the right button...
@@ -33,8 +33,7 @@ $(function(){
 		//QUESTION: I don't have any CSS set for '.current', yet it
 		//still works... is this because it fades in? Should I be adding
 		//a css display for best practice?
-		currentProfile.fadeOut(400).removeClass('current');
-		nextProfile.fadeIn(400).addClass('current');
+		currentProfile.fadeOut(400).removeClass('current').then(nextProfile.fadeIn(400).addClass('current'));
 	});
 
 	//when clicking the left button...
